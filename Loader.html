@@ -1,0 +1,16 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script>
+    var isCanvasLoading = false;
+    function LoadCanvas() {
+        if (isCanvasLoading) { return; }
+        isCanvasLoading = true;
+        $("#Panel").load("index.html");
+    }
+</script>
+
+<body>
+    <button class="B1" onclick="LoadCanvas()">啟動</button><br>
+    <div class="Panel">
+    </div>
+</body>
